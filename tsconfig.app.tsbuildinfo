@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/router.tsx","./src/components/loading.tsx","./src/components/resultoverlay.tsx","./src/components/scene/experiencescene.tsx","./src/pages/experience.tsx","./src/pages/home.tsx","./src/store/experiencestore.ts"],"version":"5.9.3"}
