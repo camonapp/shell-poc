@@ -10,13 +10,7 @@ export default function ResultOverlay() {
   const isSuccess = outcome === 'success'
 
   const handleComplete = () => {
-    const detail = { outcome, success: isSuccess }
-
-    window.dispatchEvent(
-      new CustomEvent('experience:complete', { detail, bubbles: true }),
-    )
-
-    console.log('[experience:complete]', detail)
+    window.parent.postMessage({ type: 'experience:complete', success: isSuccess }, '*')
 
     reset()
     navigate('/')
